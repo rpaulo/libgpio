@@ -70,6 +70,12 @@ gpio_open_device(const char *device)
 	return (fd);
 }
 
+void
+gpio_close(gpio_handle_t handle)
+{
+	close(handle);
+}
+
 int
 gpio_pin_list(gpio_handle_t handle, gpio_config_t **pcfgs)
 {

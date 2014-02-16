@@ -59,14 +59,22 @@ typedef enum {
  */
 gpio_handle_t	gpio_open(unsigned int);
 gpio_handle_t	gpio_open_device(const char *);
+void		gpio_close(gpio_handle_t);
 /*
  * Get a list of all the GPIO pins.
  */
 int		gpio_pin_list(gpio_handle_t, gpio_config_t **);
 /*
  * GPIO pin configuration.
+ *
+ * Retrieve the configuration of a specific GPIO pin.  The pin number is
+ * passed through the gpio_config_t structure.
  */
 int		gpio_pin_config(gpio_handle_t, gpio_config_t *);
+/*
+ * Sets the GPIO flags on a specific GPIO pin.  The pin number and the flags
+ * to be set are passed through the gpio_config_t structure.
+ */
 int		gpio_pin_set_flags(gpio_handle_t, gpio_config_t *);
 /*
  * GPIO pin values.
