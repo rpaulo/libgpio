@@ -138,19 +138,23 @@ class GPIO:
         if self.lib.gpio_pin_pulsate(self.handle, pin) != 0:
             raise OSError('Unable to set pin to pulsate')
 
+    #
     # Pin definitions from /usr/include/sys/gpio.h
-    pin_low = 0x00
-    pin_high = 0x01
-    pin_input = 0x0001
-    pin_output = 0x0002
+    #
+    # States
+    pin_low       = 0x0000
+    pin_high      = 0x0001
+    # Configuration
+    pin_input     = 0x0001
+    pin_output    = 0x0002
     pin_opendrain = 0x0004
-    pin_pushpull = 0x0008
-    pin_tristate = 0x0010
-    pin_pullup = 0x0020
-    pin_pulldown = 0x0040
-    pin_invin = 0x0080
-    pin_invout = 0x0100
-    pin_pulsate = 0x0200
+    pin_pushpull  = 0x0008
+    pin_tristate  = 0x0010
+    pin_pullup    = 0x0020
+    pin_pulldown  = 0x0040
+    pin_invin     = 0x0080
+    pin_invout    = 0x0100
+    pin_pulsate   = 0x0200
 
 if __name__ == "__main__":
     g = GPIO()
