@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2013 Rui Paulo <rpaulo@felyko.com>
+ * Copyright (c) 2013-2014 Rui Paulo <rpaulo@felyko.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -194,7 +194,7 @@ gpio_pin_set_flag(gpio_handle_t handle, gpio_pin_t pin, uint32_t flag)
 	cfg.g_pin = pin;
 	if (gpio_pin_config(handle, &cfg) < 0)
 		return (-1);
-	cfg.g_flags |= flag;
+	cfg.g_flags = flag;
 	
 	return (gpio_pin_set_flags(handle, &cfg));
 }
