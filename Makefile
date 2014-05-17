@@ -1,5 +1,3 @@
-# $FreeBSD$
-
 LIB=	gpio
 SHLIB_MAJOR=1
 SRCS=	gpio.c

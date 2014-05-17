@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2013 Rui Paulo <rpaulo@FreeBSD.org>
+ * Copyright (c) 2013 Rui Paulo <rpaulo@felyko.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,9 +23,6 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#include <sys/cdefs.h>
-__FBSDID("$FreeBSD$");
-
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>

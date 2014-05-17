@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2013 Rui Paulo <rpaulo@FreeBSD.org>
+ * Copyright (c) 2013 Rui Paulo <rpaulo@felyko.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -22,8 +22,6 @@
  * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
- *
- * $FreeBSD$
  */
 
 #ifndef _LIBGPIO_H_
