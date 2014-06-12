@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(libgpio)
+add_library(gpio SHARED gpio.c)
+add_definitions(-I.)
+set_property(TARGET gpio PROPERTY SOVERSION "1")
+add_subdirectory(gpioctl)
+add_subdirectory(python)
