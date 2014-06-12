@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(gpioctl)
+add_executable(gpioctl gpioctl.c)
+add_definitions(-I.. -L..)
+add_dependencies(gpioctl libgpio)
+target_link_libraries(gpioctl gpio)
